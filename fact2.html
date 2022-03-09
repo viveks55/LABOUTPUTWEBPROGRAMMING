@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> FACTORIAL
+    </title>
+   </head>
+<body align="center">
+	
+    	Enter NUM: <textarea  id="textarea"> 
+    	</textarea>
+    	<br><br>
+    			
+    		  <br><br><br>
+    	<button onclick="show()">Factorial</button> <br><br><br>
+    	<input id="answer" name="Answer"><br><br>
+
+
+    	<marquee> "Welcome to the world of Javascript" </marquee>
+    	<script>
+    	function show(){
+
+var i, no, fact;
+fact=1;
+no=Number(document.getElementById("textarea").value);
+for(i=1; i<=no; i++)  
+{
+fact= fact*i;
+}  
+document.getElementById("answer").value= fact;
+}
+</script>
+
+</body>
+</html>
